@@ -1,0 +1,15 @@
+podemos selecionar das seguintes formas:
+
+#1 
+span {
+
+}
+
+#2
+p span {
+
+}
+
+#3 span .cl1 {
+    
+}

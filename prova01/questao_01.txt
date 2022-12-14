@@ -1,0 +1,11 @@
+Na linha 04 deveria usar <!-- --> ao inves /* */ para comentarios
+
+Na linha 10-12 deveria estar escrita
+
+#para {
+    background-color: blue
+}
+
+na linha 18 a tag <strong> não foi fechada </strong>
+
+na 24 a tag correta a ser utilizada deveria ser a <script> </script>
