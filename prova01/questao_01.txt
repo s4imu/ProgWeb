@@ -1,3 +1,6 @@
+Todos os erros foram encontrados corretamente.
+Nota 2.0
+
 Na linha 04 deveria usar <!-- --> ao inves /* */ para comentarios
 
 Na linha 10-12 deveria estar escrita
