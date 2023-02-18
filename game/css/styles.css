@@ -12,3 +12,15 @@
 .enemy-ship {
   position: absolute;
 }
+
+p {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  right: 12px;
+  top: 12px;
+  margin: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}

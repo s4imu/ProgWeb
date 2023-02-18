@@ -20,7 +20,6 @@
       if (e.key === "ArrowLeft") ship.mudaDirecao(-1);
       else if (e.key === "ArrowRight") ship.mudaDirecao(+1);
       else if (e.key === " "){      
-        console.log("Comeca o jogo");
         start = true
       }
       else if(e.key === "p"){
@@ -60,16 +59,16 @@
         this.element.style.bottom = "20px";
         this.element.style.left = `${parseInt(TAMX / 2) - 50}px`;
       }
-      mudaDirecao(giro) { //muda frame da nave
+      mudaDirecao(giro) {
         if (this.direcao + giro >= 0 && this.direcao + giro <= 2) {
           this.direcao += giro;
           this.element.src = this.AssetsDirecoes[this.direcao];
         }
       }
       move() {
-        if (this.direcao === 0 && this.element.style.left > 0 && this.element.style.left < TAMX)
+        if (this.direcao === 0)
           this.element.style.left = `${parseInt(this.element.style.left) - 1}px`;
-        if (this.direcao === 2 && this.element.style.rleft > 0 && this.element.style.left < TAMX)
+        if (this.direcao === 2)
           this.element.style.left = `${parseInt(this.element.style.left) + 1}px`;
         space.move();
       }
