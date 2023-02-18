@@ -46,6 +46,18 @@
       }
     }
 
+    class Laser {
+      constructor( { position } ) {
+        let laser = document.createElement("img");
+        laser.setAttribute("src", "./assets/laserGreen.png");
+        let space = document.getElementById("space"); 
+        laser.style.bottom = `${position.y}px`;
+        laser.style.left = `${position.x}px`;
+        laser.style.position = 'absolute'
+        space.appendChild(laser)
+      }
+    }
+
     class Ship {
       constructor() {
         this.element = document.getElementById("ship");
@@ -58,6 +70,16 @@
         this.element.src = this.AssetsDirecoes[this.direcao];
         this.element.style.bottom = "20px";
         this.element.style.left = `${parseInt(TAMX / 2) - 50}px`;
+
+        let laser  = new Laser(
+          {
+            position: {
+              x: (parseInt(this.element.style.left) + 44),
+              y: parseInt(this.element.style.bottom) + 75
+
+            }
+          }
+        );
       }
       mudaDirecao(giro) {
         if (this.direcao + giro >= 0 && this.direcao + giro <= 2) {
