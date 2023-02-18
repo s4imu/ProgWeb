@@ -66,9 +66,9 @@
         }
       }
       move() {
-        if (this.direcao === 0)
+        if (this.direcao === 0 && parseInt(this.element.style.left) >= 0) 
           this.element.style.left = `${parseInt(this.element.style.left) - 1}px`;
-        if (this.direcao === 2)
+        if (this.direcao === 2 && parseInt(this.element.style.left) <= TAMX - 100)
           this.element.style.left = `${parseInt(this.element.style.left) + 1}px`;
         space.move();
       }
